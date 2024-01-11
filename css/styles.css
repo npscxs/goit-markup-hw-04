@@ -302,19 +302,16 @@ button {
   gap: 24px;
 }
 .list-sm-item {
+}
+
+.team-link-sm {
   width: 40px;
   height: 40px;
   flex-shrink: 0;
   border-radius: 50%;
   background-color: #4d5ae5;
-  padding: 12px;
 }
 
-.team-link-sm {
-}
-.team-link-sm:hover .list-sm-item {
-  background-color: #404bbf;
-}
 .team-sm {
   width: 16px;
   height: 16px;
