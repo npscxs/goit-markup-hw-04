@@ -340,7 +340,6 @@ button {
   text-align: center;
   color: #2e2f42;
   font-size: 36px;
-  font-style: normal;
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-transform: capitalize;
@@ -356,9 +355,16 @@ button {
 }
 .portfolio-list-item {
   width: calc((100% - 48px) / 3);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-list-item:hover .text-box {
   transform: translateY(0%);
+}
+
+.portfolio-list-item:hover {
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
 .box-image {
@@ -410,7 +416,8 @@ button {
   padding: 100px 0;
 }
 .container-footer {
-  display: block;
+  display: flex;
+  align-items: baseline;
 }
 .logo-down {
   color: #4d5ae5;
@@ -432,4 +439,42 @@ button {
   line-height: 1.5;
   letter-spacing: 0.02em;
   max-width: 264px;
+}
+
+.box-soc-media {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-left: 120px;
+}
+.sm-text {
+  color: #fff;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+.sm-list-bot {
+  display: flex;
+  gap: 16px;
+}
+.sm-item-bot {
+}
+.sm-link-bot {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #4d5ae5;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.sm-link-bot:hover,
+.sm-link-bot:focus {
+  background-color: #31d0aa;
+}
+
+.sm-icon-bot {
+  fill: #f4f4fd;
 }
